@@ -1,0 +1,11 @@
+a = level.room((-1, 1), (1, 2))
+b = level.room((0, 1), (1, 2))
+c = level.room((1, 1), (1, 2))
+
+a.connect("right", b)
+b.connect("left", a)
+b.connect("right", c, locked=True, key=level.keys.white)
+b.item = level.keys.white
+c.connect("left", b)
+
+level.start = a

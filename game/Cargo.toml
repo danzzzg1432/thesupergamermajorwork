@@ -1,0 +1,25 @@
+[package]
+name = "pythoneer"
+edition = "2021"
+version.workspace = true
+
+[workspace]
+members = [
+    "pythoneer_macros"
+]
+
+[workspace.package]
+version = "0.1.0"
+
+[workspace.dependencies]
+
+[dependencies]
+allocative = "0.3.4"
+bevy = "0.15.0"
+bevy_egui = "0.33.0"
+egui_extras = { version = "0.31.1", features = ["syntect"] }
+pyo3 = { version = "0.25.0", features = ["abi3-py313"] }
+rfd = "0.15.3"
+starlark = "0.13.0"
+pythoneer_macros = { path = "pythoneer_macros" }
+anyhow = "1.0.98"

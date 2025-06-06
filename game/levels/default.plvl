@@ -1,0 +1,3 @@
+# Minimum possible valid level, this should never actually be loaded but exists as a placeholder.
+
+level.start = level.room((0, 0), (0, 0))
